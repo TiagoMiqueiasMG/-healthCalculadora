@@ -13,7 +13,7 @@ Optamos por nos envolver neste projeto devido à nossa crença na importância d
 Estamos firmemente convictos de que a adoção de práticas alimentares mais conscientes pode gerar impactos positivos não apenas no ambiente imediato, mas também contribuir para o equilíbrio social, ambiental e econômico, tanto no Brasil quanto no restante do mundo.
 
 
-# Para que serve a Prato Consciente?
+# 3. Para que serve a Prato Consciente?
 
 A principal finalidade do projeto é promover a conscientização sobre o consumo de alimentos e a preparação de refeições. Com esse objetivo em mente, estamos trabalhando no desenvolvimento de uma "calculadora de alimentos", que permitirá calcular com precisão a quantidade necessária de ingredientes para diversos pratos.
 
