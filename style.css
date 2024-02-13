@@ -44,45 +44,10 @@ span{
 }
 /* ------------- */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+  
 }
 
-.div_main_first,
-.div_main_second {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.text_main_1,
-.text_main_2 {
-    margin: 0 20px;
-}
-
-.map{
-  height: 400px;
-  width: 400px;
-}
-
-.first_map,
-.second_map {
-    margin: 20px;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    
-}
-
-.text_container {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 300px; /* Defina a largura máxima */
-    margin: 0 auto; /* Centralize horizontalmente */
-}
 
 
 
