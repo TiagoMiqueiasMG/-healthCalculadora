@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #43A046;
+    color: #160f0f;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo_header{
+    width: 20%;
+    height: 20%;
+    margin-left: 30%;
+}
+
+nav {
+    display: flex;
+    margin-right: 10%; 
+}
+
+.item_menu {
+    margin-left: 20px; 
+}
+
+.item_menu a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+
+span{
+    font-size: 25px;
+}
+
+.map{
+    height: 35%;
+    width: 35%;
+}
+/* ------------- */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div_main_first,
+.div_main_second {
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    margin: 10px;
+    justify-content: center;
+}
+
+.text_container {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    margin-right: 2%;
+}
+
+.image_container {
+    margin: 10px;
+}
+
+.map {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+}
+
+
+
+/* --------------- */
+
+.footer {
+    background-color: #43A046;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.menu_footer, .social_midia {
+    display: flex;
+    align-items: flex-start; 
+    flex-direction: column; 
+}
+
+.menu_footer {
+    margin-left: 20px; 
+}
+
+.social_midia {
+    display: flex;
+    align-items: center;
+    margin-right: 10%; 
+}
+
+.menu_footer ul, .social_midia ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu_footer_item, .list_ico {
+    margin: 10px 0; 
+    list-style: none;
+}
+
+.menu_footer_item a, .list_ico img {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu_footer_item a:hover {
+    text-decoration: underline;
+}
+
+.logo_footer {
+    width: 80px;
+    height: auto; 
+    margin-left: 150%; 
+}
+
+.list_ico {
+    margin: 0 5px; 
+    list-style: none;
+}
+
+.list_ico img {
+    width: 20px; 
+    height: auto; 
+}
