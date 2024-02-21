@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Prato Consciente</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="">                
+                <img class="logo_header" src="src/img/calculadora.ico" alt="Calculadora Icon">
+            </a>
+        </div>   
+        <nav>
+            <div class="item_menu">
+                <a class="" href="home.html">
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="item_menu">
+                <a href="Perguntas">
+                    <span>Perguntas</span>
+                </a>
+            </div>
+            <div class="item_menu">
+                <a href="estatistica.html">
+                    <span>Estatísticas</span>
+                </a>
+            </div>
+            <div class="item_menu item_calculadora ">
+                <a href="Calculadora">
+                    <span>Calculadora</span>
+                </a>
+            </div>        
+        </nav>        
+    </header>
+    <main>
+        <section class="container">
+            <div class="container-carrosel active">
+                <div class="carrosel">
+                    <div class="content">
+                        <h1>Prato Consciente</h1>
+                        <h2>Desperdicio Ausente</h2>
+                        <p>O Prato Consciente tem como propósito disponibilizar uma calculadora de receitas, oferecendo informações precisas sobre a quantidade de ingredientes necessários para a produção de diversos pratos.</p> 
+                        <div class="item_menu item_calculadora calculadora-carrossel ">
+                            <a href="Calculadora">
+                                <span> Conheça a Calculadora</span>
+                            </a>
+                        </div>  
+                    </div>
+                    <div class="image">
+                        <img src="src/img/Illustration-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-carrosel">
+                <div class="carrosel">
+                    <div class="content">
+                        <h1>Prato Consciente</h1>
+                        <h2>Desperdicio Ausente</h2>
+                        <p>A principal visão por trás desse projeto é combater o desperdício de alimentos. De acordo com a ABIA (Associação Brasileira da Indústria de Alimentos), em média, cada pessoa descarta 60 quilos de alimentos bons por ano no Brasil. Nossa meta é reduzir essa métrica negativa, tornando o processo de preparação e utilização de ingredientes mais eficiente.</p>
+                    </div>
+                    <div class="image">
+                        <img src="src/img/desperdicio-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div> 
+            <div id="prev" onclick="prev()"> < </div>   
+            <div id="next" onclick="next()"> > </div>      
+        </section>
+        <section class="container_conteudo">
+            <div class="projeto">
+                <h1>Qual o segredo por trás da nossa escolha?</h1>
+                <p>Optamos por nos envolver neste projeto devido à nossa crença na importância da responsabilidade social e na promoção do consumo consciente. Além disso, buscamos alinhar nossas iniciativas com os Objetivos de Desenvolvimento Sustentável estabelecidos pela ONU, destacando nossa ênfase nos princípios de consumo e produção responsáveis.</p>
+
+                <p>Estamos firmemente convictos de que a adoção de práticas alimentares mais conscientes pode gerar impactos positivos não apenas no ambiente imediato, mas também contribuir para o equilíbrio social, ambiental e econômico, tanto no Brasil quanto no restante do mundo.</p>
+            </div>
+            <div class="projeto_image">
+                <img src="src/img/pana.png" alt="">
+            </div>
+            <div class="conteudo">
+                <h1>Por que evitar o desperdício?</h1>
+                <p>O desperdício alimentar é um problema grave que precisa ser visto com mais atenção. Dados da ONU (Organização das Nações Unidas) e da FAO (Organização das Nações Unidas para Alimentação e Agricultura) revelam que cerca de 30% da produção global de alimentos é desperdiçada ou perdida anualmente, o que equivale a cerca de 1,3 bilhão de toneladas. Esses números são ainda mais alarmantes quando consideramos as milhares de pessoas que sofrem de fome ou insegurança alimentar. No Brasil, por exemplo, são 33 milhões de pessoas vivendo nessas condições.</p>
+
+                <p>O país está entre os dez que mais desperdiçam alimentos no mundo. Números mostram que mais de R＄ 1,3 bilhão em frutas, legumes e verduras vão para o lixo anualmente nos supermercados brasileiros, e cada brasileiro descarta em média, por ano, 60 quilos de alimentos bons para consumo.</p>
+                <a href="estatistica.html">Leia Mais </a>
+            </div>
+            <div class="conteudo_image">
+                <img src="src/img/PRECO-DO-DESPERDICIO-destacada.webp" alt="">
+            </div>
+        </section> 
+        <section class="container_bloco">
+            <div class="bloco">
+                <p>Conheça outros projetos com o mesmo objetivo</p>
+                <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2017-08/politica-nacional-de-combate-ao-desperdicio-de-alimentos-e-tema-de-projetos">Leia mais </a>
+            </div>
+            <div class="bloco_image">
+                <img src="src/img/projetos.webp" alt="">
+            </div>
+            <div class="bloco">
+                <p> Educação alimentar é TUDO! </p>
+                <a href="https://www.oseudinheirovalemais.com.br/15-receitas-com-cascas-e-talos-de-frutas-legumes-e-verduras/">Leia mais</a>
+            </div>
+            <div class="bloco_image">
+                <img src="src/img/sobras.webp" alt="">
+            </div>
+        </section>  
+        <section class="depoimentos">
+            <h2>Depoimentos de clientes satisfeitos</h2>
+          
+            <article class="depoimento">
+              <blockquote>
+                <p>“Excelente serviço! A equipe foi muito atenciosa e profissional. Recomendo a todos!”</p>
+              </blockquote>
+              <div class="autor">
+                <img src="src/img/perfil-fem.webp" alt="Foto do cliente 1">
+                <p><strong>Isabela Couto</strong></p>
+              </div>
+            </article>
+          
+            <article class="depoimento">
+              <blockquote>
+                <p>“Fiquei muito satisfeita com o resultado. O produto é de alta qualidade e o atendimento foi impecável.”</p>
+              </blockquote>
+              <div class="autor">
+                <img src="src/img/perfil-mas.webp" alt="Foto do cliente 2">
+                <p><strong>Marcos Andrade</strong></p>
+              </div>
+            </article>
+          </section>
+    </main>
+    <footer class="footer">
+        <div class="menu_footer">
+            <div class="logo" alt="Logo Prato Consciente">
+                <a href="">                
+                    <img class="logo_footer" src="src/img/calculadora.ico" alt="Calculadora Icon">
+                </a>            
+            </div>
+        </div>
+        <div>
+            <ul class="menu_footer">
+                <li class="menu_footer_item">
+                    <a href="">Home</a>
+                </li>
+                <li class="menu_footer_item">
+                    <a href="">Fale Conosco</a>
+                </li>
+                <li class="menu_footer_item">
+                    <a href="">Canal de</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social_midia">
+            <div>
+                <p>Nossas Redes Sociais</p>
+                <ul class="social icons">
+                    <li class="list_ico">
+                        <img class="ico" src="./src/img/instagram.png" alt="Instagram">
+                    </li>
+                    <li class="list_ico">
+                        <img class="ico" src="./src/img/linkedin.png" alt="Linkedin">
+                    </li>
+                    <li class="list_ico">
+                        <img class="ico"  src="./src/img/twitter.png" alt="Twitter">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+</body>

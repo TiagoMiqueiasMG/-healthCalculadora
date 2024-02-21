@@ -5,19 +5,21 @@ body {
 }
 
 header {
-    background-color: #43A046;
-    color: #fff;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px 20px;
+   
 }
 
 .logo_header{
+    background-color: #43A046;
+    border-radius: 100px;
     width: 25%;
     height: 25%;
     margin-left: 30%;
+    margin-top: 10px;
 }
 
 nav {
@@ -27,6 +29,7 @@ nav {
 
 .item_menu {
     margin-left: 20px; /* Adiciona margem à esquerda */
+    padding-top: 8px;
 }
 
 .item_menu a {
@@ -34,8 +37,15 @@ nav {
     text-decoration: none;
 }
 
+.item_calculadora{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #43A046;
+}
+
 span{
-    font-size: 25px;
+    font-size: 20px;
+    color: black;
 }
 
 .map{
@@ -43,9 +53,6 @@ span{
     width: 35%;
 }
 /* ------------- */
-main {
-  
-}
 
 
 
@@ -100,6 +107,7 @@ main {
 
 .social_midia p {
     margin: 0; /* Removendo a margem do parágrafo */
+    padding-left: 40px;
 }
 
 .social {
@@ -108,12 +116,14 @@ main {
 }
 
 .list_ico {
-    margin: 0 5px; /* Adicionando margem entre os ícones */
-    list-style: none; 
+    margin: 0 15px; /* Adicionando margem entre os ícones */
+    list-style: none;
+
 }
 
 .list_ico img {
     width: 25px; /* ou qualquer outra medida desejada */
     height: 25px; /* ou qualquer outra medida desejada */
     list-style: none; /* Remover os pontos da lista */
+    
 }
