@@ -2,6 +2,7 @@
     --green: #dbf5dc;
     --white: #fff;
     --black: #292929;
+    --gray: #373636;
 }
 
 *{
@@ -58,6 +59,7 @@ nav ul{
     display: flex;
     gap: 91px;
     margin-left: 10%;
+    list-style-type: none;
 }
 
 @media (max-width: 800px){
@@ -70,6 +72,17 @@ li {
     margin: -3%;
 }
 
+a li{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover li  {
+    color: #83e886; 
+}
+
 .btn-menu{
     border: 2px solid black;
     padding: 10px 60px;
@@ -77,6 +90,12 @@ li {
     background: transparent;
     margin-left: 2%;
 }
+
+.btn-menu:hover{
+    color: #83e886;
+    border: 2px solid #83e886;;
+}
+
 
 @media (max-width: 800px){
     .btn-menu{
@@ -131,11 +150,10 @@ section {
 .text-area  .title {
     font-size: 35px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--gray);
     background-color: var(--green);
     border-radius: 30px;
-    text-align: center;
-    color:rgb(10, 13, 16); 
+    text-align: center;     
 }
 
 .s-sofrem .wrapper{
@@ -158,11 +176,10 @@ section {
 .s-sofrem .title {
     font-size: 35px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--gray);
     background-color: var(--green);
     border-radius: 30px;
-    text-align: center;
-    color:rgb(10, 13, 16); 
+    text-align: center;     
 }
 
 
