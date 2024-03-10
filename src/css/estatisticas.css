@@ -14,7 +14,7 @@ header {
     padding: 0 20px;
 }
 
-.logo_header{
+.logo_header {
     width: 20%;
     height: 20%;
     margin-left: 30%;
@@ -22,11 +22,11 @@ header {
 
 nav {
     display: flex;
-    margin-right: 10%; 
+    margin-right: 10%;
 }
 
 .item_menu {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .item_menu a {
@@ -34,15 +34,16 @@ nav {
     text-decoration: none;
 }
 
-span{
+span {
     font-size: 25px;
 }
 
-.map{
+.map {
     height: 35%;
     width: 35%;
 }
-/* ------------- */
+
+/* Main */
 main {
     display: flex;
     justify-content: center;
@@ -72,52 +73,54 @@ main {
 
 .map {
     width: 100%;
-    max-width: 800px; 
+    max-width: 800px;
     height: auto;
 }
 
-
-
-/* --------------- */
-
+/* Footer */
 .footer {
     background-color: #43A046;
     color: #fff;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
+    min-height: 200px;
 }
 
-.menu_footer, .social_midia {
+.menu_footer,
+.social_midia {
     display: flex;
-    align-items: flex-start; 
-    flex-direction: column; 
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .menu_footer {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .social_midia {
     display: flex;
     align-items: center;
-    margin-right: 10%; 
+    margin-right: 10%;
 }
 
-.menu_footer ul, .social_midia ul {
+.menu_footer ul,
+.social_midia ul {
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-.menu_footer_item, .list_ico {
-    margin: 10px 0; 
+.menu_footer_item,
+.list_ico {
+    margin: 10px 0;
     list-style: none;
 }
 
-.menu_footer_item a, .list_ico img {
+.menu_footer_item a,
+.list_ico img {
     color: #fff;
     text-decoration: none;
 }
@@ -128,16 +131,42 @@ main {
 
 .logo_footer {
     width: 80px;
-    height: auto; 
-    margin-left: 150%; 
+    height: auto;
+    margin-left: 150%;
 }
 
 .list_ico {
-    margin: 0 5px; 
+    margin: 0 5px;
     list-style: none;
 }
 
 .list_ico img {
-    width: 20px; 
-    height: auto; 
+    width: 20px;
+    height: auto;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo_header {
+        margin-left: 0;
+    }
+
+    nav {
+        margin: 10px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_footer {
+        margin-left: 0;
+    }
 }
