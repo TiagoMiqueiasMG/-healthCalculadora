@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #999292;
+    --secondary-color: #D9D9D9;
+    --text-color: #717171;
+  }
+
+.container{
+    background-color: var(--secondary-color);
+    padding-top: 5%;
+}
+.calculadora{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--primary-color);
+
+    margin: 0 30%;
+    padding: 1rem;
+
+    border-radius: 1rem;
+}
+
+.text-dishes, 
+.text-number-adults, 
+.text-number-children {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+
+    padding: 0.5rem 0 0 1rem;
+    margin: 1% 0;
+
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.option-dishes{
+    display: flex;
+    margin: 0 1rem 0 0;
+}
+
+.select-dishes{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-color:  var(--secondary-color);
+    color: var(--text-color);    
+
+    border-radius: 1.5rem;
+    border: none;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.add-dishes{
+    cursor: pointer;
+    height: 4rem;
+}
+
+.range{
+    position: relative; 
+}
+
+.adults-range, .children-range{
+    width: 75%;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.range-adults-text, .range-children-text{
+    background: white;
+    padding: 1rem;
+    border-radius: 100%;
+    height: 1rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.right{
+    display: flex;
+    flex-flow: column;
+}
+
+.text-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem 0 0 1rem;
+    margin: 1% 0;
+
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.amount-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+
+    cursor: pointer;
+
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.calculate-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
+
+.calculate-button button{
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.calcular{
+    width: 65%;
+    padding: 1rem;
+}
+
+.calcular span{
+    font-size: 1.8rem;
+}
