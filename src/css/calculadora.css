@@ -1,13 +1,15 @@
 :root {
-    --primary-color: #999292;
-    --secondary-color: #D9D9D9;
-    --text-color: #717171;
+    --primary-color: #43A046;
+    --secondary-color: #FFFFFF;
+    --third-color: #ABBED1;
+    --text-color: #373636;
   }
 
 .container{
     background-color: var(--secondary-color);
     padding-top: 5%;
 }
+
 .calculadora{
     display: grid;
     justify-content: center;
@@ -16,9 +18,49 @@
     background-color: var(--primary-color);
 
     margin: 0 30%;
-    padding: 1rem;
+    padding: 2rem;
 
     border-radius: 1rem;
+}
+
+@media (max-width: 1600px) {
+    .calculadora{
+        margin: 0 20%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .calculadora{
+        margin: 0 15%;
+    }
+}
+
+@media (max-width: 950px) {
+    .calculadora{
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 750px) {
+    .calculadora{
+        grid-template-columns: 1fr;
+        margin: 0 15%;
+    }
+}
+
+@media (max-width: 550px) {
+    .calculadora{
+        grid-template-columns: 1fr;
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 450px) {
+    .calculadora{
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+        padding: 1rem;
+    }
 }
 
 .text-dishes, 
@@ -68,19 +110,21 @@
 
 .adults-range, .children-range{
     width: 75%;
-    height: 2rem;
+    height: 1.65rem;
     cursor: pointer;
 }
 
-.range-adults-text, .range-children-text{
+
+.range-adults-text, .range-children-text {
     background: white;
+    color: var(--text-color);
     padding: 1rem;
-    border-radius: 100%;
-    height: 1rem;
+    border-radius: 3rem;
     font-size: 1.5rem;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 93%;
+    transform: translate(-110%, -50%);
 }
 
 
@@ -88,6 +132,16 @@
     display: flex;
     flex-flow: column;
 }
+
+.time {
+    position: relative; /* Para que o posicionamento absoluto do input seja relativo a este container */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 
 .text-time{
     display: flex;
@@ -101,16 +155,16 @@
     color: var(--text-color);
 }
 
-.amount-time{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
-
-    cursor: pointer;
-
-    font-size: 2.5rem;
+.amount-time {
+    position: absolute;
+    z-index: 1; /* Garante que o input fique na frente do SVG */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-color);
     color: var(--secondary-color);
+    font-size: 2rem;
+    border-radius: 5px;
 }
 
 .calculate-button{
@@ -124,6 +178,12 @@
     border: none;
     border-radius: 2rem;
     cursor: pointer;
+    background-color: var(--text-color);
+    
+}
+
+.calculate-button button span {
+    color:  var(--secondary-color);
 }
 
 .calcular{
@@ -133,4 +193,140 @@
 
 .calcular span{
     font-size: 1.8rem;
+}
+
+
+/* =========================Lista de Itens=================================*/ 
+.list-dishes {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 3rem;
+}
+
+.dish .dish-content {
+    display: flex;
+}
+
+.text-dish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+
+    font-size: 2rem;
+}
+
+.take-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 6rem;
+}
+
+/* ===========Modal==============*/
+.modal{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--third-color);
+    color: var(--text-color);
+    box-shadow: 0px 10px 14px 18px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+    .modal-content{
+        max-width: 300px;
+    }
+}
+
+.title-modal {
+    font-size: 36px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.modal-itens{
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+}
+
+.modal-subtitle{
+    font-size: 36px;
+}
+
+.necessary-amount{
+    font-style: italic; 
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.recipe-item{
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+.recipe-list .item {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+.close-modal{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    border: none;
+}
+
+.close-modal span{
+    color: var(--text-color);
+    font-size: 36px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .title-modal, .modal-subtitle, .close-modal span {
+        font-size: 28px;
+    }
+
+    .necessary-amount{
+        font-size: 24px;
+    }
+
+    .recipe-item{
+        font-size: 18px;
+    }
 }
