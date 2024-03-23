@@ -7,18 +7,22 @@
 
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    list-style: none;
-    text-decoration: none;
+    padding: 0;      
     font-family: 'Montserrat', sans-serif;
 }
 
 /* /header está sendo chamado no css header.css */
 
 /* main */
+
+
+.container_estatistica {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1.4px;
+    margin: 0 auto;
+}
+
 section {
     margin-bottom: -12%; 
 }
@@ -174,22 +178,24 @@ footer .boxs_footer:nth-child(3)
 .boxs_footer ul li a{
     color: #fff;
     text-decoration:none;  
-    font-size: 25px;    
+    font-size: 110%;    
 }
 
 .boxs_footer ul li a:hover{
-    color: #fff
+    color: #04230d;
 
 }
 
 .boxs_footer h2{
     margin-top: 5%;
     margin-bottom: 5%;
+    font-size: 130%;
 }
 
 .boxs_footer ul.social.icons {
     display: flex; 
     justify-content: center; 
+    margin-right: 10%;
 }
 
 .boxs_footer ul.social.icons li {
@@ -199,12 +205,17 @@ footer .boxs_footer:nth-child(3)
 
 .boxs_footer ul li a svg path {
     fill: #fff; 
+    
 }
 
+.boxs_footer ul li a svg path:hover {
+    fill: #04230d; 
+}
 
 .boxs_footer ul li a svg {
-    width: 24px; 
-    height: 24px; 
+    width: 78%; 
+    height: 28%; 
+    
 }
 
 .footer{
@@ -221,3 +232,4 @@ footer .boxs_footer:nth-child(3)
     margin-right: 5%;
     margin-left: 5%;
 }
+
