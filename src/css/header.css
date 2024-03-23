@@ -23,7 +23,6 @@ img{
 
 .header{
     padding: 40px 0;
-    box-sizing: border-box;
 }
 
 .header .wrapper {
@@ -91,7 +90,8 @@ a:hover li  {
 
 .btn-menu:hover{
     color: #83e886;
-    border: 2px solid #83e886;;
+    border: 2px solid #83e886;
+    cursor: pointer;
 }
 
 
