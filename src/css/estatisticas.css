@@ -133,95 +133,91 @@ section {
 
 /*-----------------------------------------------------------
 ---------------------------------------------------------------- Footer */
-.footer {
-    background-color: #43A046;
-    color: #fff;
-    padding: 20px;
+
+footer{
+    width: 100%;
+    min-height: 250px;
+    background: #43A046;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    min-height: 200px;
 }
 
-.menu_footer,
-.social_midia {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+footer .boxs_footer{
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
 }
 
-.menu_footer {
-    margin-left: 20px;
+
+footer .boxs_footer:nth-child(3)
+{
+    width: 400px;
 }
 
-.social_midia {
-    display: flex;
-    align-items: center;
-    margin-right: 10%;
+.boxs_footer{
+    color: #fff;    
 }
 
-.menu_footer ul,
-.social_midia ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
+.logo_footer{
+    height: 50%;
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 15%;
 }
 
-.menu_footer_item,
-.list_ico {
-    margin: 10px 0;
+.boxs_footer ul li{
+    margin-bottom: 10%;
     list-style: none;
+    margin-top: 5%;
 }
 
-.menu_footer_item a,
-.list_ico img {
+.boxs_footer ul li a{
     color: #fff;
-    text-decoration: none;
+    text-decoration:none;  
+    font-size: 25px;    
 }
 
-.menu_footer_item a:hover {
-    text-decoration: underline;
+.boxs_footer ul li a:hover{
+    color: #fff
+
 }
 
-.logo_footer {
-    width: 80px;
-    height: auto;
-    margin-left: 150%;
+.boxs_footer h2{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.list_ico {
-    margin: 0 5px;
-    list-style: none;
+.boxs_footer ul.social.icons {
+    display: flex; 
+    justify-content: center; 
 }
 
-.list_ico img {
-    width: 20px;
-    height: auto;
+.boxs_footer ul.social.icons li {
+    margin: 0 10px; 
+    list-style: none; 
 }
 
-/* Media Queries */
-@media only screen and (max-width: 768px) {
-    header {
-        height: auto;
-        flex-direction: column;
-        text-align: center;
-    }
+.boxs_footer ul li a svg path {
+    fill: #fff; 
+}
 
-    .logo_header {
-        margin-left: 0;
-    }
 
-    nav {
-        margin: 10px 0;
-    }
+.boxs_footer ul li a svg {
+    width: 24px; 
+    height: 24px; 
+}
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
+.footer{
+    display: flex; 
+    justify-content: center; 
+    justify-content: space-between;
+    padding: 2%;
+    background: #3b923e;
+    
+}
 
-    .logo_footer {
-        margin-left: 0;
-    }
+.footer h3{
+    color: #fff;
+    margin-right: 5%;
+    margin-left: 5%;
 }
