@@ -8,14 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Links CSS -->
-    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/footer.css">
     <!-- Links Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Links JavaScript -->
-    <script src="src/js/index.js" defer></script>
+    <script src="src/js/index.js" defer ></script>
     <title>Prato Consciente</title>
 </head>
 <body>
@@ -31,19 +30,18 @@
                     <ul>
                         <a class="" href="index.html"><li>Principal</li></a>
                         <a class="" href="perguntas.html"><li>Perguntas</li></a>
-                        <a class="" href="estatistica.html"><li>Estatísticas</li></a>                                         
-                                                
+                        <a class="" href="estatistica.html"><li>Estatísticas</li></a>                                   
                     </ul>
                 </nav>
                 <a href="calculadora.html">
                     <button class="btn-menu">Calculadora</button>
                 </a>
-                
                 <span class="material-symbols-outlined">menu</span>
             </div>
         </div>        
     </header>
     <main>
+        <!-- Carrosel -->
         <section class="container">
             <div class="container-carrosel active">
                 <div class="carrosel">
@@ -52,13 +50,13 @@
                         <h2>Desperdicio Ausente</h2>
                         <p>O Prato Consciente tem como propósito disponibilizar uma calculadora de receitas, oferecendo informações precisas sobre a quantidade de ingredientes necessários para a produção de diversos pratos.</p> 
                         <div class="item_menu item_calculadora calculadora-carrossel ">
-                            <a href="Calculadora">
+                            <a href="calculadora.html">
                                 <span> Conheça a Calculadora</span>
                             </a>
                         </div>  
                     </div>
                     <div class="image">
-                        <img src="src/img/Illustration-removebg-preview.png" alt="">
+                        <img src="src/img/varios_branco.png">
                     </div>
                 </div>
             </div>
@@ -77,67 +75,75 @@
             <div id="prev" onclick="prev()"> < </div>   
             <div id="next" onclick="next()"> > </div>      
         </section>
+        <!-- Objetivo do projeto  -->
         <section class="container_conteudo">
+            <div class="projeto_image">
+                <img src="src/img/pana.png" alt="">
+            </div>
             <div class="projeto">
                 <h1>Qual o segredo por trás da nossa escolha?</h1>
                 <p>Optamos por nos envolver neste projeto devido à nossa crença na importância da responsabilidade social e na promoção do consumo consciente. Além disso, buscamos alinhar nossas iniciativas com os Objetivos de Desenvolvimento Sustentável estabelecidos pela ONU, destacando nossa ênfase nos princípios de consumo e produção responsáveis.</p>
 
                 <p>Estamos firmemente convictos de que a adoção de práticas alimentares mais conscientes pode gerar impactos positivos não apenas no ambiente imediato, mas também contribuir para o equilíbrio social, ambiental e econômico, tanto no Brasil quanto no restante do mundo.</p>
             </div>
-            <div class="projeto_image">
-                <img src="src/img/pana.png" alt="">
-            </div>
-            <div class="conteudo">
+        </section>
+        
+            <!-- Desperdicio -->
+            <section class="container_conteudo">
+            <div class="projeto">
                 <h1>Por que evitar o desperdício?</h1>
                 <p>O desperdício alimentar é um problema grave que precisa ser visto com mais atenção. Dados da ONU (Organização das Nações Unidas) e da FAO (Organização das Nações Unidas para Alimentação e Agricultura) revelam que cerca de 30% da produção global de alimentos é desperdiçada ou perdida anualmente, o que equivale a cerca de 1,3 bilhão de toneladas. Esses números são ainda mais alarmantes quando consideramos as milhares de pessoas que sofrem de fome ou insegurança alimentar. No Brasil, por exemplo, são 33 milhões de pessoas vivendo nessas condições.</p>
 
                 <p>O país está entre os dez que mais desperdiçam alimentos no mundo. Números mostram que mais de R＄ 1,3 bilhão em frutas, legumes e verduras vão para o lixo anualmente nos supermercados brasileiros, e cada brasileiro descarta em média, por ano, 60 quilos de alimentos bons para consumo.</p>
                 <a href="estatistica.html">Leia Mais </a>
             </div>
-            <div class="conteudo_image">
-                <img src="src/img/PRECO-DO-DESPERDICIO-destacada.webp" alt="">
-            </div>
         </section> 
+        <!-- Outros Projetos -->
         <section class="container_bloco">
             <div class="bloco">
-                <p>Conheça outros projetos com o mesmo objetivo</p>
-                <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2017-08/politica-nacional-de-combate-ao-desperdicio-de-alimentos-e-tema-de-projetos">Leia mais </a>
+                <div class="bloco_image">
+                    <img class="bloco_conteudo_image" src="src/img/projetos.webp" alt="">
+                </div>
+                <p>Conheça mais de 30 projetos  com o mesmo  objetivo</p>
+                <p>A maioria dos projetos em análise na Casa pretende acabar com a punição civil e criminal de doadores de alimentos. </p>
+                <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2017-08/politica-nacional-de-combate-ao-desperdicio-de-alimentos-e-tema-de-projetos" target="_blank">Leia mais </a>
+                
             </div>
-            <div class="bloco_image">
-                <img src="src/img/projetos.webp" alt="">
-            </div>
+            <!-- Educaçao alimentar -->
             <div class="bloco">
-                <p> Educação alimentar é TUDO! </p>
-                <a href="https://www.oseudinheirovalemais.com.br/15-receitas-com-cascas-e-talos-de-frutas-legumes-e-verduras/">Leia mais</a>
-            </div>
-            <div class="bloco_image">
-                <img src="src/img/sobras.webp" alt="">
+                <div class="bloco_image">
+                    <img class="bloco_conteudo_image" src="src/img/sobras.webp" alt="">
+                </div>
+                <p> Educação alimentar é TUDO! Aproveite melhor os <br> alimentos </p>
+                <p>Aproveitar melhor os alimentos  traz ganhos para o seu bolso e para sua saúde</p>
+                <a href="https://www.oseudinheirovalemais.com.br/15-receitas-com-cascas-e-talos-de-frutas-legumes-e-verduras/" target="_blank">Leia mais</a>
             </div>
         </section>  
+        <!-- Depoimentos -->
+        <h2>Depoimentos de Clientes Satisfeitos</h2>
         <section class="depoimentos">
-            <h2>Depoimentos de clientes satisfeitos</h2>
-          
             <article class="depoimento">
-              <blockquote>
-                <p>“Excelente serviço! A equipe foi muito atenciosa e profissional. Recomendo a todos!”</p>
-              </blockquote>
               <div class="autor">
-                <img src="src/img/perfil-fem.webp" alt="Foto do cliente 1">
+                <img class="depoimento_image" src="src/img/perfil-fem.webp" alt="Foto do cliente 1">
                 <p><strong>Isabela Couto</strong></p>
               </div>
+              <blockquote>
+                <p>“Excelente serviço! A equipe foi muito atenciosa e profissional.<br> Recomendo a todos!”</p>
+              </blockquote>
             </article>
           
             <article class="depoimento">
-              <blockquote>
-                <p>“Fiquei muito satisfeita com o resultado. O produto é de alta qualidade e o atendimento foi impecável.”</p>
-              </blockquote>
               <div class="autor">
-                <img src="src/img/perfil-mas.webp" alt="Foto do cliente 2">
+                <img class="depoimento_image1" src="src/img/perfil-mas.webp" alt="Foto do cliente 2">
                 <p><strong>Marcos Andrade</strong></p>
               </div>
+              <blockquote>
+                <p>“Fiquei muito satisfeito com o resultado.<br> O produto é de alta qualidade e o atendimento foi impecável.”</p>
+              </blockquote>
             </article>
-          </section>
+        </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
         <div class="menu_footer">
             <div class="logo" alt="Logo Prato Consciente">
