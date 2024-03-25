@@ -45,6 +45,7 @@
 .social_midia p {
     margin: 0; /* Removendo a margem do parágrafo */
     padding-left: 40px;
+    color: var(--cor_segundaria);
 }
 
 .social {
