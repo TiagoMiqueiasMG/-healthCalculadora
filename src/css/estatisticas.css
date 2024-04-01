@@ -166,7 +166,7 @@ svg{
     fill: #000
 }
 path {
-  fill: #1da1f2;
+  fill: #000000;
   stroke: white;
   stroke-width: 1px;
 }
@@ -188,7 +188,7 @@ path:hover {
   height: 30px;
   line-height: 30px;
   margin: 0 auto;
-  color: #21669e;
+  color: #000000;
   border-radius: 5px;
   transform: translateX(-50%);
   display: none;
