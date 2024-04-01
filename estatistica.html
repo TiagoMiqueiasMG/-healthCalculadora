@@ -14,36 +14,45 @@
     
     <!-- js -->
     <script src="src/js/script.js" defer></script>
-    <script src="src/js/mapa.js" defer></script>
-
-    
+    <script src="src/js/mapa.js" defer></script>    
     <title>Estatíticas</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container_header">
-            <div class="wrapper">
-                <figure class="image">
-                    <a href="index.html">                
-                        <img src="src/img/logo2.ico" alt="logo prato consciente">
-                    </a>
-                </figure>
-                <nav>
-                    <ul>
-                        <a class="" href="index.html"><li>Principal</li></a>
-                        <a class="" href="perguntas.html"><li>Perguntas</li></a>
-                        <a class="" href="estatistica.html"><li>Estatísticas</li></a>                                         
-                                                
-                    </ul>
-                </nav>
-                <a href="calculadora.html">
-                    <button class="btn-menu">Calculadora</button>
-                </a>
-                <span class="material-symbols-outlined">menu</span>
-            </div>
-        </div>        
-    </header>
 
+    </head>
+    <body>
+        <header class="header">
+            <div class="container_header">
+                <div class="wrapper">
+                    <figure class="image">
+                        <a href="index.html">                
+                            <img src="src/img/logo2.ico" alt="logo prato consciente">
+                        </a>
+                    </figure>
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="index.html">Principal</a></li>
+                            <li><a href="perguntas.html">Perguntas</a></li>
+                            <li><a href="estatistica.html">Estatísticas</a></li>                                   
+                        </ul>
+                    </nav>
+                    <a href="calculadora.html" class="btn-menu">Calculadora</a>
+
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()"><img class="icon" src="./src/img/open.png" alt="menu"></button>
+                    </div>          
+                    
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="perguntas.html">Perguntas</a></li>
+                    <li><a href="estatistica.html">Estatísticas</a></li> 
+                    <li><a href="calculadora.html">Calculadora</a></li>               
+                </ul>                
+            </div>        
+        </header>
+
+        <script src="./src/js/menu.js"></script>
     <main>
        <section class="s-desperdicio">
             <div class="container_estatistica">

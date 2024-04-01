@@ -70,14 +70,15 @@ li {
     margin: -3%;
 }
 
-a li{
+li a{
     color: black;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 110%;
 }
 
-a:hover li  {
+li:hover a  {
     color: #83e886; 
 }
 
@@ -87,6 +88,7 @@ a:hover li  {
     border-radius: 12px;
     background: transparent;
     margin-left: 2%;
+    color: black
 }
 
 .btn-menu:hover{
@@ -99,23 +101,79 @@ a:hover li  {
 @media (max-width: 1020px){
     .btn-menu{
         display: none;
+        margin-right: 10%;
     }
 }
 
-
-.material-symbols-outlined {
-  margin-left: 5%;  
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-  
+.mobile-menu {
+    display: none;    
+    top: 1%;   
+    width: 100%;   
+    background-color: #eaf3ea;
+    padding: 10px;        
 }
 
-@media (max-width: 1020px){
-    .material-symbols-outlined{
+.mobile-menu ul {
+    margin-top: 20px; 
+    
+}
+
+.mobile-menu ul li {
+    margin-top: 1%; 
+    margin-bottom: 2%;  
+    color: white;
+}
+
+.mobile-menu ul li a {
+    color: rgb(4, 27, 14); 
+    font-size: 120%;
+}
+
+@media screen and (max-width: 940px) {
+    .mobile-menu {
+        width: 100%;        
+    }
+}
+
+.mobile-menu.open {
+    display: block;
+}
+
+.mobile-menu-icon{
+    display: none; 
+    margin-right: 10%;   
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .nav-item{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;    
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;  
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;        
+    }
+
+    .mobile-menu .nav-item{
         display: block;
-        margin-right: 15%;        
+        padding-top: 1.2rem;
     }
+    .open{
+        display: block;
+    }   
+
 }
+ 
