@@ -14,4 +14,4 @@ function prev(){
     carrosel[index].classList.add('active');
 }
 
-// setInterval(next, 5000);
+ setInterval(next, 6000);

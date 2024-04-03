@@ -23,11 +23,12 @@ img{
 
 .header{
     padding: 40px 0;
+    padding-bottom: 20px;
 }
 
 .header .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -127,6 +128,11 @@ li:hover a  {
 .mobile-menu ul li a {
     color: rgb(4, 27, 14); 
     font-size: 120%;
+}
+
+.mobile-menu ul li a:hover {
+    color: #83e886; 
+    
 }
 
 @media screen and (max-width: 940px) {
