@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,23 @@
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/menu.js" defer></script>
+    <script src="./src/js/perguntas.js" defer></script>
     <title>Perguntas </title>
 </head>
+
 <body>
-   <header class="header">
+    <header class="header">
         <div class="container_header">
             <div class="wrapper">
                 <figure class="image">
-                    <a href="index.html">                
+                    <a href="index.html">
                         <img src="src/img/logo2.ico" alt="logo prato consciente">
                     </a>
                 </figure>
@@ -27,90 +33,71 @@
                     <ul>
                         <li><a href="index.html">Principal</a></li>
                         <li><a href="perguntas.html">Perguntas</a></li>
-                        <li><a href="estatistica.html">Estatísticas</a></li>                                   
+                        <li><a href="estatistica.html">Estatísticas</a></li>
                     </ul>
                 </nav>
                 <a href="calculadora.html" class="btn-menu">Calculadora</a>
 
                 <div class="mobile-menu-icon">
                     <button onclick="menuShow()"><img class="icon" src="./src/img/open.png" alt="menu"></button>
-                </div>          
-                
+                </div>
+
             </div>
         </div>
         <div class="mobile-menu">
             <ul>
                 <li><a href="index.html">Principal</a></li>
                 <li><a href="perguntas.html">Perguntas</a></li>
-                <li><a href="estatistica.html">Estatísticas</a></li> 
-                <li><a href="calculadora.html">Calculadora</a></li>               
-            </ul>                
-        </div>        
+                <li><a href="estatistica.html">Estatísticas</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </div>
     </header>
-    
-    <section class="faq-section">
-        <div class="container">
-            <div class="faq-container">
-                <div class="faq-item">
-                    <h2>Por que o desperdício de alimentos é um problema global?</h2>
-                    <p>O desperdício de alimentos é um problema global porque contribui para a insegurança alimentar, aumenta a pressão sobre os recursos naturais,
-                         como água e terra, e gera impactos ambientais significativos devido à produção e descarte de alimentos não consumidos.</p>
-                </div>
 
-                <div class="faq-item">
-                    <h2>Quais são as principais causas do desperdício de alimentos?</h2>
-                    <p>As principais causas do desperdício de alimentos incluem práticas inadequadas de armazenamento, transporte e distribuição, padrões de consumo excessivo, datas de validade
-                         rígidas e padrões estéticos exigentes que resultam na rejeição de alimentos perfeitamente seguros para consumo.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h2>Como o desperdício de alimentos afeta o meio ambiente?</h2>
-                    <p>O desperdício de alimentos contribui para o aumento das emissões de gases de efeito estufa devido à decomposição
-                         anaeróbica dos resíduos alimentares em aterros sanitários. Além disso, consome recursos naturais, como água, terra e energia, utilizados na produção, transporte e descarte de alimentos.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h2>Qual é o impacto econômico do desperdício de alimentos</h2>
-                    <p>O desperdício de alimentos representa uma perda significativa de recursos econômicos, tanto para produtores quanto para consumidores. Os produtores enfrentam perdas na produção e no transporte, enquanto os consumidores desperdiçam dinheiro 
-                        ao comprar alimentos que acabam não sendo consumidos.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h2>Como podemos reduzir o desperdício de alimentos em casa?</h2>
-                    <p>Podemos reduzir o desperdício de alimentos em casa praticando compras conscientes, planejando refeições, armazenando adequadamente os alimentos, utilizando sobras de forma criativa, compostando resíduos orgânicos e apoiando 
-                        iniciativas locais de redistribuição de alimentos.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h2>Qual é o papel dos governos e das organizações na redução do desperdício de alimentos?</h2>
-                    <p>Os governos e as organizações desempenham um papel crucial na redução do desperdício de alimentos por meio da implementação de políticas e regulamentações que promovam práticas sustentáveis de produção, distribuição e consumo de alimentos, além de apoiar programas de conscientização pública 
-                        e incentivar a inovação na gestão de resíduos alimentares.</p>
-                </div>
+    <section class="perg_section">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <div class="faq">
+            <div class="question">
+                <h3>Por que o desperdicio de alimentos é um problema global?</h3>
+                <svg width="15" height="10" viewBox="0 0 42 30" >
+                    <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="answer">
+                <p class="texto">
+                    O desperdício de alimentos é um problema global porque contribui para a insegurança alimentar,
+                    aumenta a pressão sobre os recursos naturais, como água e terra, e gera impactos ambientais
+                    significativos devido à produção e descarte de alimentos não consumidos.
+                </p>
             </div>
         </div>
     </section>
 
     <section class="contact-section">
-        <div class="container">
-            <h2>Mande sua pergunta:</h2>
-            <form>
+        <div class="container_form">
+            <form action="" method="POST">
+                <h2 class="titulo-form">Mande sua pergunta</h2>
                 <div class="form-input">
                     <label for="name">Nome:</label>
                     <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    <p class="error-text">* O Campo nome é obrigatório </p>
                 </div>
 
                 <div class="form-input">
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+                    <p class="error-text"></p>
+                    
                 </div>
 
                 <div class="form-input">
                     <label for="question">Pergunta:</label>
                     <textarea id="question" name="question" placeholder="Sua pergunta" rows="4" required></textarea>
+                    <p class="error-text">* O Campo é obrigatório</p>
                 </div>
 
                 <div class="form-input">
-                    <button type="submit" class="form_button"> Enviar Pergunta</button>
+                    <button type="button" class="form_button"> Enviar Pergunta</button>
                 </div>
             </form>
         </div>
@@ -162,4 +149,5 @@
     </section>
 
 </body>
+
 </html>

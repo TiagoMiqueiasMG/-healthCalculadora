@@ -80,7 +80,7 @@ li a{
 }
 
 li:hover a  {
-    color: #83e886; 
+    color: #43A046; 
 }
 
 .btn-menu{
@@ -93,8 +93,8 @@ li:hover a  {
 }
 
 .btn-menu:hover{
-    color: #83e886;
-    border: 2px solid #83e886;
+    color: #43A046;
+    border: 2px solid #43A046;
     cursor: pointer;
 }
 
@@ -131,7 +131,7 @@ li:hover a  {
 }
 
 .mobile-menu ul li a:hover {
-    color: #83e886; 
+    color: #43A046; 
     
 }
 
