@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     }
 
+   
+
     modalContent.innerHTML = `
                     <div class="modal-title">
                         <h1 class="title-modal">
@@ -87,16 +89,20 @@ document.addEventListener("DOMContentLoaded", function () {
                         </dl>
                     </div>
                     <button class="close-modal">
-                        <span>FECHAR</span>
+                        <span class="close-modal">FECHAR</span>
                     </button>
                 `;
     modal.style.display = "block";
   }
 
+  
+
 
   document
     .querySelector(".calculate-button")
     .addEventListener("click", calculateFood);
+
+   
 
   // Adicionando evento de clique no botão de fechar do modal
   document.addEventListener("click", function (event) {

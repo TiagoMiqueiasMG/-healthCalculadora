@@ -18,3 +18,20 @@ document.onmousemove = function (e) {
   description.style.left = e.pageX + "px";
   description.style.top = e.pageY - 70 + "px";
 };
+
+
+//  Botão Topo
+
+const backToTopButton = document.querySelector('.back-to-top')
+
+const backToTop = () => {
+if (window.scrollY >= 100) {
+backToTopButton.classList.add('show')
+} else {
+backToTopButton.classList.remove('show')
+}
+}
+
+window.addEventListener('scroll', function () {
+backToTop()
+})

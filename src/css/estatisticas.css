@@ -209,3 +209,26 @@ path:hover {
   border-right: 10px solid transparent;
   border-top: 10px solid white;
 }
+
+/* Botão Topo */
+
+.back-to-top {
+    background-color: #43A046;
+    border-radius: 100%;
+    padding: 15px;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.60s; 
+    transform: translateY(100%);
+   }
+   
+   .back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+   }
