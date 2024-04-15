@@ -279,7 +279,7 @@ blockquote p {
     padding: 15px;
     cursor: pointer;
     position: fixed;
-    right: 1rem;
+    right: 3rem;
     bottom: 1rem;
     line-height: 0;
     visibility: hidden;
@@ -293,3 +293,4 @@ blockquote p {
     opacity: 1;
     transform: translateY(0);
    }
+

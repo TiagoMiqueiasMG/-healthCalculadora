@@ -216,7 +216,7 @@ input.error, textarea.error{
     padding: 15px;
     cursor: pointer;
     position: fixed;
-    right: 1rem;
+    right: 3rem;
     bottom: 1rem;
     line-height: 0;
     visibility: hidden;
