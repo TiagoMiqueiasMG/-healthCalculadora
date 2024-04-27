@@ -19,6 +19,7 @@ document.onmousemove = function (e) {
   description.style.top = e.pageY - 70 + "px";
 };
 
+<<<<<<< HEAD
 
 // //  Botão Topo
 
@@ -35,3 +36,5 @@ document.onmousemove = function (e) {
 // window.addEventListener('scroll', function () {
 // backToTop()
 // })
+=======
+>>>>>>> 4142904653bfc321c4c209bd3339739227f5bf95
