@@ -93,9 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </button>
                 `;
     modal.style.display = "block";
-  }
-
-  
+  }  
 
 
   document
@@ -114,16 +112,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Configurando os inputs de adultos e crianças
   document
     .querySelector(".adults-range")
-    .addEventListener("input", function () {
-      // Atualizando o valor exibido
+    .addEventListener("input", function () {      
       document.querySelector(".range-adults-text").textContent = this.value;
     });
 
   // Adicionando evento de input para o input de crianças
   document
     .querySelector(".children-range")
-    .addEventListener("input", function () {
-      // Atualizando o valor exibido
+    .addEventListener("input", function () {      
       document.querySelector(".range-children-text").textContent = this.value;
     });
 });

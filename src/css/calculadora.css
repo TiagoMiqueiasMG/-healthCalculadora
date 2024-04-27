@@ -109,15 +109,14 @@
 }
 
 .range{
-    position: relative; 
+    position: relative;     
 }
 
 .adults-range, .children-range{
     width: 75%;
     height: 1.65rem;
-    cursor: pointer;
+    cursor: pointer;    
 }
-
 
 .range-adults-text, .range-children-text {
     background: white;
@@ -128,7 +127,7 @@
     position: absolute;
     top: 50%;
     left: 93%;
-    transform: translate(-110%, -50%);
+    transform: translate(-110%, -50%);    
 }
 
 

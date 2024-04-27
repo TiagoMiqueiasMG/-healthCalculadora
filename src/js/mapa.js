@@ -20,18 +20,18 @@ document.onmousemove = function (e) {
 };
 
 
-//  Botão Topo
+// //  Botão Topo
 
-const backToTopButton = document.querySelector('.back-to-top')
+// const backToTopButton = document.querySelector('.back-to-top')
 
-const backToTop = () => {
-if (window.scrollY >= 100) {
-backToTopButton.classList.add('show')
-} else {
-backToTopButton.classList.remove('show')
-}
-}
+// const backToTop = () => {
+// if (window.scrollY >= 100) {
+// backToTopButton.classList.add('show')
+// } else {
+// backToTopButton.classList.remove('show')
+// }
+// }
 
-window.addEventListener('scroll', function () {
-backToTop()
-})
+// window.addEventListener('scroll', function () {
+// backToTop()
+// })
